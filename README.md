@@ -10,18 +10,23 @@
    git clone https://your-repository-url.git
    cd your-repository
 2. Установите зависимости:
+   ```bash
    pip install -r requirements.txt
 3. Инициализируйте Playwright:
+   ```bash
    python -m playwright install
 
 ## Запуск тестов:
 1. Запуск тестов локально:
+   ```bash
    pytest --alluredir=allure-results
    allure serve allure-results
 2. Запуск тестов через Docker:
    * Построить контейнер:
+     ```bash
      docker build -t playwright-tests .
    * Запустить контейнер:
+     ```bash
      docker run --rm playwright-tests
 
 ## Структура проекта:
